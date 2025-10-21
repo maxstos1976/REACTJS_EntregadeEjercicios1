@@ -1,3 +1,7 @@
+// Este ejercicio, lo hice calculando la luminosidad relativa.
+// Lo hice para que el texto donde se informa el valor del color de fondo
+// este bien contrastado con el fondo.
+
 import { useState, useEffect } from "react";
 
 function App() {
