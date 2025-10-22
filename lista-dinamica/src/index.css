@@ -23,6 +23,28 @@ body {
   margin-top: 100px;
 }
 
+.cadaitem {
+  margin: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
+  justify-content: space-between;
+}
+
+.listaitens {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+article {
+  max-width: fit-content;
+}
+
+h1 {
+  text-align: center;
+}
 button {
   padding: 0.3rem 1rem;
   font-size: 0.9rem;

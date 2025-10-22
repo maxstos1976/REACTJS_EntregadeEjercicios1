@@ -43,28 +43,51 @@ function App() {
 
   return (
     <div className="principal">
-      <h1>Lista Dinámica</h1>
-      <p>Insertar un ítem:</p>
       <div>
-        <input
-          type="text"
-          value={novoItem} // valor actual del estado
-          onChange={(e) => setNovoItem(e.target.value)} // actualiza el estado al escribir
-          onKeyDown={handleKeyDown} // escucha si se presiona Enter
-          placeholder="Escribe un ítem"
-        />
-        {/* Botón para agregar el ítem */}
-        <button onClick={insertarItem}>Insertar</button>
-      </div>
+        <div>
+          <h2>3. Lista Dinámica</h2>
+          <h3>
+            Objetivo del ejercicio: Trabajar con la creación, eliminación y
+            manipulación de elementos del DOM.
+          </h3>
+          <h3>
+            Ejercicio: Crea una página con un campo de texto, un botón que diga
+            "Agregar", y una lista vacía debajo.
+          </h3>
+          <ul>
+            <li>
+              Cuando el usuario escriba un texto y haga clic en "Agregar", el
+              texto debe añadirse como un nuevo elemento de la lista.{" "}
+            </li>
+            <li>
+              Añade un botón al lado de cada elemento para eliminarlo de la
+              lista.
+            </li>
+          </ul>
+        </div>
 
-      <ul>
-        {lista.map((item) => (
-          <li key={item.id}>
-            {item.name}
-            <button onClick={() => apagarItem(item.id)}>Eliminar</button>
-          </li>
-        ))}
-      </ul>
+        <article>
+          <h1>Lista Dinámica</h1>
+          <p>Insertar un ítem:</p>
+          <input
+            type="text"
+            value={novoItem} // valor actual del estado
+            onChange={(e) => setNovoItem(e.target.value)} // actualiza el estado al escribir
+            onKeyDown={handleKeyDown} // escucha si se presiona Enter
+            placeholder="Escribe un ítem"
+          />
+          {/* Botón para agregar el ítem */}
+          <button onClick={insertarItem}>Insertar</button>
+          <ul className="listaitens">
+            {lista.map((item) => (
+              <li className="cadaitem" key={item.id}>
+                {item.name}
+                <button onClick={() => apagarItem(item.id)}>Eliminar</button>
+              </li>
+            ))}
+          </ul>
+        </article>
+      </div>
     </div>
   );
 }
