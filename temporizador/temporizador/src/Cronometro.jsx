@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import "./Cronometro.css";
 
 const Cronometro = () => {
-  const [segundos, setSegundos] = useState(0);
+  const [segundos, setSegundos] = useState(1290);
   const [ativo, setAtivo] = useState(false);
   const intervaloRef = useRef(null);
 
