@@ -17,9 +17,12 @@ function App() {
   ];
 
   const gerarContrasena = (tamano) => {
+    if (tamano < 4 || tamano == "") {
+      alert("La longitud debe ser mayor o igual a 4!");
+      return;
+    }
     let resultado = "";
     const totalCaracteres = caracteresAceitosTodos.join("").length;
-    console.log(totalCaracteres);
     for (let i = 0; i < tamano; i++) {
       const indiceRandom = Math.floor(Math.random() * totalCaracteres);
       resultado += caracteresAceitosTodos[indiceRandom];
