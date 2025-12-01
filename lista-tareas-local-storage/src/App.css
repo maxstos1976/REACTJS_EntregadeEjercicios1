@@ -1,0 +1,23 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: large;
+}
+
+.principal {
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: linear-gradient(to left, #cbcbcb, #ffffff);
+  border-radius: 20px;
+  box-shadow: 10px 10px 10px gainsboro;
+}
+
+.no-hay-tareas {
+  color: red;
+  text-align: center;
+}

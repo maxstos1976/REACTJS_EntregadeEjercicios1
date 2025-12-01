@@ -1,0 +1,16 @@
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: aliceblue; */
+  background: linear-gradient(to right, #e3f2ff, #eefeff);
+  padding: 8px;
+  border-radius: 10px;
+  border: 0.5px solid rgb(204, 209, 213);
+}
+
+.btn-excluir {
+  background-color: rgb(255, 213, 213);
+  color: red;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
